@@ -36,6 +36,7 @@ extern "C" {
 #include "bsp_hcsr501.h"
 #include "bsp_lcd.h"
 #include "bsp_rf.h"
+#include "app.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -69,6 +70,11 @@ void Error_Handler(void);
 #define Encoder_B_GPIO_Port GPIOA
 #define Encoder_Switch_Pin GPIO_PIN_2
 #define Encoder_Switch_GPIO_Port GPIOA
+#define Encoder_Switch_EXTI_IRQn EXTI2_IRQn
+#define SPI1_CE_Pin GPIO_PIN_4
+#define SPI1_CE_GPIO_Port GPIOA
+#define RST_Pin GPIO_PIN_0
+#define RST_GPIO_Port GPIOB
 #define CE_Pin GPIO_PIN_12
 #define CE_GPIO_Port GPIOB
 #define SPI2_CSN_Pin GPIO_PIN_8

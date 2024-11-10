@@ -1,0 +1,65 @@
+#include "bsp_lcd.h"
+
+extern uint8_t motion[5];
+
+const uint8_t rfidSymbol[8] = {
+    0b00000,  // BXXXB
+    0b01010,  // XBBBX
+    0b10001,  // BXXXB
+    0b10101,  // XBBBX
+    0b10101,  // BXXXB
+    0b10001,  // XBBBX
+    0b01010,  // BBXBB
+    0b00000   // BBXBB
+};
+
+const uint8_t runningPerson[8] = {
+    0b00010,  //     *
+    0b00101,  //    * *
+    0b10010,  //     *
+    0b01100,  //   ***
+    0b10100,  //     **
+    0b00110,  //    * *
+    0b01010,  //    *   *
+    0b10001   //  *     *
+};
+
+
+void Initializing(BSP_LCD_SetupParams_TypeDef *params){
+
+	I2C_LCD_CreateCustomChar(0, 0, wifiSymbol);      // Store WiFi symbol at CGRAM index 0
+	I2C_LCD_CreateCustomChar(0, 1, runningPerson);
+
+	char time[5];
+	BSP_LCD_SendMessage("Initializing: ", 0, 0, True);
+ 	itoa(params->setup_time - *(params->seconds), time, 10);
+	BSP_LCD_SendMessage(time, 0, 1, False);
+}
+
+void BSP_LCD_Init(BSP_LCD_SetupParams_TypeDef *params){
+	I2C_LCD_Init(LCD);
+	  while(params->condition()){
+		  Initializing(params);
+	  }
+}
+
+
+void BSP_LCD_Clear(){
+	I2C_LCD_Clear(LCD);
+}
+
+void BSP_LCD_SetCursor(uint8_t col, uint8_t row){
+ 	I2C_LCD_SetCursor(LCD, col, row);
+}
+
+void BSP_LCD_SendMessage(char* message, uint8_t col, uint8_t row, boolean clear){
+	if(clear){
+		BSP_LCD_Clear();
+	}
+	BSP_LCD_SetCursor(col, row);
+ 	I2C_LCD_WriteString(LCD, message);
+}
+
+
+
+

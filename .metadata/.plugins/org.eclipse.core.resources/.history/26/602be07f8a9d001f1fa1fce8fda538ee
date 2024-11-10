@@ -1,0 +1,6 @@
+#include "defines.h"
+
+#define MAX_USER_AMOUNT 2
+
+#define TURN_ON_WS_COMMAND ((uint8_t[NRF24L01P_PAYLOAD_LENGTH - 1]){1, 0, 0, 0, 0, 0, 0})
+#define TURN_OFF_WS_COMMAND ((uint8_t[NRF24L01P_PAYLOAD_LENGTH - 1]){0, 0, 0, 0, 0, 0, 0})

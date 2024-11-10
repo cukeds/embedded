@@ -1,0 +1,10 @@
+#include "bsp.h"
+
+static volatile uint32_t cooldown_counter = 0;
+
+
+// Starts the cooldown timer
+void BSP_StartCardCooldown(void) {
+    cooldown_counter = CARD_COOLDOWN * 1000; // Convert seconds to milliseconds
+    cooldown_complete = 0;  // Reset the completion flag
+}

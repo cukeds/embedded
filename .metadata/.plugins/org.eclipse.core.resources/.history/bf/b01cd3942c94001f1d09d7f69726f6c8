@@ -1,4 +1,0 @@
-#include "stm32f4xx_hal_def.h"
-#include "defines.h"
-
-void HAL_HCSR04_Callback(TIM_HandleTypeDef *htim);

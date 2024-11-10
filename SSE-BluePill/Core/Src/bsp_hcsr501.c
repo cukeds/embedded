@@ -1,10 +1,14 @@
 #include <bsp_hcsr501.h>
 
 
-static bool allow_readings = false;
+static boolean allow_readings = False;
 
 inline void BSP_HCSR501_Init(){
-	allow_readings = true;
+	allow_readings = True;
+}
+
+inline void BSP_HCSR501_OffTime(){
+	allow_readings = False;
 }
 
 uint8_t BSP_HCSR501_Read(){
@@ -14,7 +18,7 @@ uint8_t BSP_HCSR501_Read(){
 	return HAL_GPIO_ReadPin(HCSR501_PORT, HCSR501_PIN);
 }
 
-bool BSP_HCSR501_Ready(){
-	return BSP_HCSR501_Read() == HCSR501_INITIALIZING;
+boolean BSP_HCSR501_Ready(){
+	return allow_readings;
 }
 

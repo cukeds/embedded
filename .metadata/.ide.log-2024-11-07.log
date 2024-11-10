@@ -1,0 +1,61 @@
+2024-11-08 00:07:19,985 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-08 00:08:13,638 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,472x262,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-08 00:08:15,196 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-08 00:08:15,449 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-08 00:08:15,889 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-11-08 00:08:16,602 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 510849152 Bytes (685768704)
+2024-11-08 00:08:16,671 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 533460568 Bytes (685768704)
+2024-11-08 00:08:17,300 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 576922840 Bytes (685768704)
+2024-11-08 00:08:17,727 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SPI
+2024-11-08 00:08:17,727 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-08 00:08:17,727 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-08 00:08:17,727 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-08 00:08:17,727 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8
+2024-11-08 00:08:17,727 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-11-08 00:08:17,727 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ADC
+2024-11-08 00:08:17,727 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-11-08 00:08:17,727 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-11-08 00:08:17,728 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-11-08 00:08:17,730 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-11-08 00:08:17,932 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\MXTmpFiles\license.tmp_save
+2024-11-08 00:08:18,192 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\MXTmpFiles\license.tmp
+2024-11-08 00:08:18,265 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Src\gpio.c_save
+2024-11-08 00:08:18,386 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Src\gpio.c
+2024-11-08 00:08:18,405 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Inc\gpio.h_save
+2024-11-08 00:08:18,485 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Inc\gpio.h
+2024-11-08 00:08:18,768 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Src\adc.c_save
+2024-11-08 00:08:18,903 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Src\adc.c
+2024-11-08 00:08:18,922 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Inc\adc.h_save
+2024-11-08 00:08:19,000 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Inc\adc.h
+2024-11-08 00:08:19,016 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Src\spi.c_save
+2024-11-08 00:08:19,110 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Src\spi.c
+2024-11-08 00:08:19,114 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Inc\spi.h_save
+2024-11-08 00:08:19,189 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Inc\spi.h
+2024-11-08 00:08:19,207 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Src\tim.c_save
+2024-11-08 00:08:19,335 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Src\tim.c
+2024-11-08 00:08:19,351 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Inc\tim.h_save
+2024-11-08 00:08:19,433 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Inc\tim.h
+2024-11-08 00:08:19,462 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Src\stm32f4xx_it.c_save
+2024-11-08 00:08:19,582 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Src\stm32f4xx_it.c
+2024-11-08 00:08:19,606 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Inc\stm32f4xx_it.h_save
+2024-11-08 00:08:19,677 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Inc\stm32f4xx_it.h
+2024-11-08 00:08:19,708 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Src\stm32f4xx_hal_msp.c_save
+2024-11-08 00:08:19,796 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Src\stm32f4xx_hal_msp.c
+2024-11-08 00:08:19,805 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\MXTmpFiles\system.tmp_save
+2024-11-08 00:08:19,859 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\MXTmpFiles\system.tmp
+2024-11-08 00:08:19,882 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-11-08 00:08:19,960 [INFO] CodeEngine:335 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Inc\stm32f4xx_hal_conf.h
+2024-11-08 00:08:20,015 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Inc\main.h_save
+2024-11-08 00:08:20,115 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Inc\main.h
+2024-11-08 00:08:20,137 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Src\main.c_save
+2024-11-08 00:08:20,238 [INFO] CodeEngine:279 - Generated code: C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-Disc\Core\Src\main.c
+2024-11-08 00:08:20,609 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 197mS.
+2024-11-08 00:08:20,614 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-11-08 00:08:20,687 [INFO] ConfigFileManager:1531 - The Die is : DIE413
+2024-11-08 00:08:20,698 [INFO] ApiDbMcu:508 - Load IP Config File for FATFS
+2024-11-08 00:08:20,709 [INFO] ApiDbMcu:508 - Load IP Config File for FREERTOS
+2024-11-08 00:08:20,717 [INFO] ApiDbMcu:508 - Load IP Config File for LIBJPEG
+2024-11-08 00:08:20,729 [INFO] ApiDbMcu:508 - Load IP Config File for LWIP
+2024-11-08 00:08:20,740 [INFO] ApiDbMcu:508 - Load IP Config File for MBEDTLS
+2024-11-08 00:08:20,754 [INFO] ApiDbMcu:508 - Load IP Config File for USB_DEVICE
+2024-11-08 00:08:20,764 [INFO] ApiDbMcu:508 - Load IP Config File for USB_HOST

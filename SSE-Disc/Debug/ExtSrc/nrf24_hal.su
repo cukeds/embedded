@@ -1,5 +1,0 @@
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c:9:9:nRF24_LL_RW	32	static
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c:17:6:nRF24_CE_L	8	static
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c:21:6:nRF24_CE_H	8	static
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c:26:6:nRF24_CSN_L	8	static
-C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24_hal.c:29:6:nRF24_CSN_H	8	static

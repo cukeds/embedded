@@ -1,8 +1,0 @@
-#include "app.h"
-#include "bsp_hcsr04.h"
-
-static PresenceSensor_Status presence;
-
-void app(){
-	presence = BSP_HCSR04_GetPresence(20);
-}

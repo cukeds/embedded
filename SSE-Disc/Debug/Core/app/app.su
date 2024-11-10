@@ -1,1 +1,8 @@
-../Core/app/app.c:10:6:app	8	static
+../Core/app/app.c:11:6:app	8	static
+../Core/app/app.c:21:6:APP_MESSAGE_RECEIVED	8	static
+../Core/app/app.c:26:6:APP_SEND_MESSAGE	8	static
+../Core/app/app.c:32:6:APP_SET_MESSAGE_TO_SEND	16	static
+../Core/app/app.c:36:6:APP_SET_MESSAGE_RECEIVED	16	static
+../Core/app/app.c:40:6:APP_SETFLAG	16	static
+../Core/app/app.c:59:6:APP_PARSE_COMMAND	24	static
+../Core/app/app.c:78:18:GET_APP_DATA	4	static

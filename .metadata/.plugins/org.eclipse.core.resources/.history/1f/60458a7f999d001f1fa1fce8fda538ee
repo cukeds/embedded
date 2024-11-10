@@ -1,0 +1,30 @@
+#include "bsp.h"
+
+static volatile uint32_t cooldown_counter = 0;
+static volatile uint8_t cooldown_complete = 1;
+
+void BSP_SysTick_Init(void) {
+    // Set SysTick to 1ms intervals (assuming SystemCoreClock is set up correctly)
+    HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq() / 1000);  // 1ms tick interval
+}
+
+// Starts the cooldown timer
+void BSP_StartCardCooldown(void) {
+    cooldown_counter = CARD_COOLDOWN * 1000; // Convert seconds to milliseconds
+    cooldown_complete = 0;  // Reset the completion flag
+}
+
+// Checks if the cooldown period has finished
+uint8_t BSP_IsCardCooldownComplete(void) {
+    return cooldown_complete;
+}
+
+// SysTick callback function
+void BSP_SysTick_Handler(void) {
+    if (cooldown_counter > 0) {
+        cooldown_counter--;
+        if (cooldown_counter == 0) {
+            cooldown_complete = 1;  // Set cooldown as complete
+        }
+    }
+}

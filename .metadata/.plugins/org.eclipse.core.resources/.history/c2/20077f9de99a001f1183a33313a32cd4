@@ -1,0 +1,4 @@
+#include "defines.h"
+
+#define MAX_USER_AMOUNT 2
+

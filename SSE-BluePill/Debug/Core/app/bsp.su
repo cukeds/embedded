@@ -1,0 +1,3 @@
+../Core/app/bsp.c:7:6:BSP_StartCardCooldown	4	static
+../Core/app/bsp.c:11:13:BSP_Countdown	4	static
+../Core/app/bsp.c:15:17:BSP_GetCounter	4	static

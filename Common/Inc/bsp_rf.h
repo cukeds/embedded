@@ -2,10 +2,10 @@
 #define BSP_RF_H
 
 #include "nrf24.h"
+#include "defines.h"
 #include "Util.h"
 #include <stdbool.h>
 #include <string.h>
-#include "defines.h"
 
 typedef enum class{
     NONE = 0,
@@ -28,4 +28,5 @@ void BSP_RF_Listening();
 uint8_t BSP_RF_IrqHandler();
 void BSP_RF_ReadData(uint8_t payload[NRF24L01P_PAYLOAD_LENGTH]);
 BSP_RF_MODE_TypeDef BSP_RF_GetMode();
+
 #endif

@@ -21,17 +21,6 @@
 #define ENCODER_PIN GPIO_PIN_2
 
 
-// HCSR501
-#define HCSR501_SETUP_MINUTES 0
-#define HCSR501_SETUP_SECONDS 1
-
-#define HCSR501_FALSE 0
-#define HCSR501_TRUE 1
-#define HCSR501_INITIALIZING 2
-#define HCSR501_PORT GPIOB
-#define HCSR501_PIN GPIO_PIN_9
-
-
 // LCD
 #define LCD I2C_LCD_1
 
@@ -51,7 +40,7 @@
 #define NRF24L01P_ADDRESS				  { 'E', 'S', 'B' }
 
 #define NRF24L01P_CHANNEL 90
-#define NRF24L01P_RATE	_1Mbps
+#define NRF24L01P_RATE	_250kbps
 #define NRF24L01P_RETRANSMIT_COUNT 3
 
 typedef uint8_t count;
@@ -62,27 +51,20 @@ typedef uint16_t channel;
 
 //**** TypeDefs ****//
 //1. Power Amplifier function, NRF24_setPALevel()
-typedef enum {
-	RF24_PA_m18dB = 0,
-	RF24_PA_m12dB,
-	RF24_PA_m6dB,
-	RF24_PA_0dB,
-	RF24_PA_ERROR
-}rf24_pa_dbm_e ;
-//2. NRF24_setDataRate() input
-typedef enum {
+typedef enum
+{
     _250kbps = 2,
     _1Mbps   = 0,
     _2Mbps   = 1
 } air_data_rate;
 
-//3. NRF24_setCRCLength() input
-typedef enum {
-	RF24_CRC_DISABLED = 0,
-	RF24_CRC_8,
-	RF24_CRC_16
-}rf24_crclength_e;
-#endif
+typedef enum
+{
+    _0dBm  = 3,
+    _6dBm  = 2,
+    _12dBm = 1,
+    _18dBm = 0
+} output_power;
 
 // Defines HCSR04
 
@@ -98,3 +80,9 @@ typedef enum {
 #define HCSR04_TIM_CLK 72
 
 #define HCSR04_SWIER_LINE GPIO_PIN_8
+
+typedef enum {
+	False = 0,
+	True
+} boolean;
+#endif

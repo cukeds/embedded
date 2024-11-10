@@ -1,0 +1,4 @@
+#include "defines.h"
+
+#define PRESENCE_CUTOFF 100 //cm
+#define WORK_STATION 1

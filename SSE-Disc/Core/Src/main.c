@@ -55,6 +55,8 @@ volatile uint8_t valid = 0;
 volatile unsigned long handledInterrupts = 0;
 volatile unsigned long toHandleInterrupts = 0;
 
+extern APP_DATA_Struct app_data;
+
 float duty_cycle = 0.0;
 /* USER CODE END PV */
 
@@ -68,8 +70,6 @@ void received_message();
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-uint8_t rx_data[NRF24L01P_PAYLOAD_LENGTH] = {0,};
-uint8_t tx_data[NRF24L01P_PAYLOAD_LENGTH] = {0, 0, 0, 0, 0, 0, 0, 0};
 /* USER CODE END 0 */
 
 /**
@@ -106,6 +106,7 @@ int main(void)
   MX_TIM1_Init();
   MX_TIM2_Init();
   MX_TIM3_Init();
+  MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
 
   HAL_TIM_IC_Start_IT(&htim1, TIM_CHANNEL_1);
@@ -114,13 +115,15 @@ int main(void)
   HAL_TIM_PWM_Start_IT(&htim2, TIM_CHANNEL_4);
 
 
+
   BSP_RF_Params_TypeDef rf_params = {0};
   rf_params.channel = NRF24L01P_CHANNEL;
   rf_params.rate = NRF24L01P_RATE;
   rf_params.retransmit_count = NRF24L01P_RETRANSMIT_COUNT;
   BSP_RF_Init(&rf_params);
   BSP_RF_Listening();
-
+  BSP_RELAY_OFF();
+  BSP_STOP_PRESENCE_COUNTER();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -186,11 +189,12 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 
 
-void received_message()
+inline void received_message()
 {
+	if(!BSP_RF_IrqHandler())
+		return;
 	HAL_GPIO_TogglePin(GPIOD, LED_RX_Pin);
-	toHandleInterrupts += BSP_RF_IrqHandler();
-	BSP_RF_ReadData(rx_data);
+	APP_SETFLAG(MESSAGE_RECEIVED, True);
 	HAL_GPIO_TogglePin(GPIOD, LED_RX_Pin);
 }
 
@@ -213,6 +217,39 @@ void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim){
 		TIM2->CCR2 = pulse_width;
 		TIM2->CCR3 = pulse_width;
 		TIM2->CCR4 = pulse_width;
+	}
+
+}
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+
+	if(htim == &htim3){
+		HAL_HCSR04_Trigger();
+	}
+
+	if(htim == &htim4){
+		static uint16_t counter = 0;
+		if(counter < SEND_DATA_PERIOD){
+			if(BSP_HCSR04_GetPresence(PRESENCE_CUTOFF) == NoPresence){
+				// Count up time not present
+				SET_FIELD(&app_data, noPresenceSeconds, app_data.noPresenceSeconds + 1);
+			}else if(BSP_HCSR04_GetPresence(PRESENCE_CUTOFF) == Presence){
+				// Counter of time to
+				SET_FIELD(&app_data, noPresenceSeconds, 0);
+ 			}
+
+			counter++;
+			return;
+		}
+
+		static uint8_t message[NRF24L01P_PAYLOAD_LENGTH] = {0,};
+		message[0] = WORK_STATION;
+		message[1] = (uint8_t) (app_data.noPresenceSeconds >> 8) & 0xFF;  // High byte
+		message[2] = (uint8_t) (app_data.noPresenceSeconds & 0xFF);         // Low byte
+
+		APP_SET_MESSAGE_TO_SEND(message);
+		APP_SETFLAG(MESSAGE_TO_SEND, True);
+		counter = 0;
 	}
 
 }

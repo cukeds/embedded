@@ -18,3 +18,4 @@ void trigger_exti8_swinterrupt();
 void HAL_HCSR04_Callback(TIM_HandleTypeDef *htim);
 PresenceSensor_Status BSP_HCSR04_GetPresence(uint8_t cut);
 uint8_t HAL_HCSR04_GetDistance();
+void HAL_HCSR04_Trigger ();

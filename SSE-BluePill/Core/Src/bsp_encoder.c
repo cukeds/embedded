@@ -27,7 +27,7 @@ void BSP_ENCODER_Init(){
 }
 
 inline int16_t BSP_ENCODER_GetCount(){
-	return bsp_count;
+	return bsp_count/4;
 }
 inline int16_t BSP_ENCODER_GetSpeed(){
 	static int16_t speed_count = 0;
@@ -41,7 +41,7 @@ inline int16_t BSP_ENCODER_GetDirection(){
 	return direction;
 }
 inline int16_t BSP_ENCODER_GetSwitch(){
-	return HAL_GPIO_ReadPin(ENCODER_PORT, ENCODER_PIN);
+	return !HAL_GPIO_ReadPin(ENCODER_PORT, ENCODER_PIN);
 }
 void BSP_ENCODER_WriteSpeed(int16_t _speed){
 	speed = _speed;

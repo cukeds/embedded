@@ -1,0 +1,12 @@
+#ifndef BSP_H
+#define BSP_H
+
+#include "stm32f4xx_hal.h"
+#include "bsp_hcsr04.h"
+#include "bsp_relay.h"
+
+// Function prototypes
+void BSP_Enable_TIM4_IRQ(void);
+void BSP_Disable_TIM4_IRQ(void);
+
+#endif // BSP_H

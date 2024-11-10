@@ -1,0 +1,61 @@
+#include "app.h"
+
+static APP_DATA_Struct app_data = {
+	    .user = {.serial_number = 1},
+	    .rx_data = {0,},
+	    .tx_data = {0,},
+	};
+
+static APP_FLAGS_Struct app_flags = {
+		.waiting_for_user = true,
+};
+void app(){
+	static uint8_t status;
+	if(app_flags.waiting_for_user){
+		status = BSP_RC522_GetSerialNumber(&app_data.user.serial_number);
+		if(status == MI_OK){
+			APP_SETFLAG(WAITING_FOR_USER, false);
+		}
+	}
+}
+
+void APP_MESSAGE_RECEIVED(){
+	BSP_RF_IrqHandler();
+	BSP_RF_ReadData(app_data.rx_data);
+	app_flags.message_received = false;
+}
+
+void APP_SEND_MESSAGE(){
+	BSP_RF_SendMessage(app_data.tx_data);
+	app_flags.message_to_send = false;
+}
+
+void APP_SET_MESSAGE_TO_SEND(uint8_t message[NRF24L01P_PAYLOAD_LENGTH]){
+	memcpy(message, app_data.tx_data, NRF24L01P_PAYLOAD_LENGTH);
+}
+
+void APP_SET_MESSAGE_RECEIVED(uint8_t message[NRF24L01P_PAYLOAD_LENGTH]){
+	memcpy(message, app_data.rx_data, NRF24L01P_PAYLOAD_LENGTH);
+}
+
+void APP_SETFLAG(APP_FLAGS_Enum flag, bool value){
+	switch(flag){
+		case MESSAGE_RECEIVED:
+		{
+			app_flags.message_received = value;
+		}
+		case MESSAGE_TO_SEND:
+		{
+			app_flags.message_to_send = value;
+		}
+		case WAITING_FOR_USER:
+		{
+			app_flags.waiting_for_user = value;
+		}
+		default:
+		{
+			return;
+		}
+	}
+
+}

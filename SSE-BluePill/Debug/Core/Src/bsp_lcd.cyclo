@@ -1,5 +1,8 @@
-../Core/Src/bsp_lcd.c:5:6:Initializing	1
-../Core/Src/bsp_lcd.c:13:6:BSP_LCD_Init	2
-../Core/Src/bsp_lcd.c:22:6:BSP_LCD_Clear	1
-../Core/Src/bsp_lcd.c:26:6:BSP_LCD_SetCursor	1
-../Core/Src/bsp_lcd.c:30:6:BSP_LCD_SendMessage	2
+../Core/Src/bsp_lcd.c:8:6:Initializing	1
+../Core/Src/bsp_lcd.c:15:6:BSP_LCD_Init	2
+../Core/Src/bsp_lcd.c:23:6:BSP_LCD_Clear	1
+../Core/Src/bsp_lcd.c:27:6:BSP_LCD_SetCursor	1
+../Core/Src/bsp_lcd.c:31:6:BSP_LCD_SendMessage	2
+../Core/Src/bsp_lcd.c:40:5:BSP_LCD_ADD_STATUS	1
+../Core/Src/bsp_lcd.c:46:6:BSP_LCD_UPDATE_STATUS	1
+../Core/Src/bsp_lcd.c:51:6:BSP_LCD_DISPLAY_STATUS	3

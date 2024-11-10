@@ -11,6 +11,7 @@ RM := rm -rf
 -include sources.mk
 -include ExtSrc/subdir.mk
 -include Drivers/STM32F1xx_HAL_Driver/Src/subdir.mk
+-include Core/app/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
 -include Core/ECUAL/I2C_LCD/subdir.mk
@@ -86,8 +87,8 @@ all: main-build
 main-build: SSE-BluePill.elf secondary-outputs
 
 # Tool invocations
-SSE-BluePill.elf SSE-BluePill.map: $(OBJS) $(USER_OBJS) C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "SSE-BluePill.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Juan\STM32CubeIDE\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-BluePill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+SSE-BluePill.elf SSE-BluePill.map: $(OBJS) $(USER_OBJS) C:\Users\Isaac\Documents\Downloads\workspace_1.16.0\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "SSE-BluePill.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Isaac\Documents\Downloads\workspace_1.16.0\workspace_1.16.0\SSE-BluePill\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SSE-BluePill.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

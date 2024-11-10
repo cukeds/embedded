@@ -34,7 +34,7 @@
 		<link>
 			<name>ExtSrc</name>
 			<type>2</type>
-			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/Common/Src</locationURI>
+			<location>C:/Users/Isaac/Documents/Downloads/workspace_1.16.0/workspace_1.16.0/Common/Src</location>
 		</link>
 	</linkedResources>
 </projectDescription>

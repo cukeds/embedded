@@ -1,2 +1,2 @@
 ../Core/Src/bsp_rc522.c:4:6:BSP_RC522_Init	1
-../Core/Src/bsp_rc522.c:8:9:BSP_RC522_GetSerialNumber	1
+../Core/Src/bsp_rc522.c:8:9:BSP_RC522_GetSerialNumber	2

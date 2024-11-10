@@ -1,0 +1,10 @@
+#ifndef BSP_H
+#define BSP_H
+
+#include "stm32f1xx_hal.h"
+#include "app_defines.h"
+
+// Starts the cooldown timer
+void BSP_StartCardCooldown(void);
+
+#endif // BSP_H

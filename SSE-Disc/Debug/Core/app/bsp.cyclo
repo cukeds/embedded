@@ -1,0 +1,4 @@
+../Drivers/CMSIS/Include/core_cm4.h:1684:22:__NVIC_EnableIRQ	2
+../Drivers/CMSIS/Include/core_cm4.h:1722:22:__NVIC_DisableIRQ	2
+../Core/app/bsp.c:4:6:BSP_START_PRESENCE_COUNTER	1
+../Core/app/bsp.c:13:6:BSP_STOP_PRESENCE_COUNTER	1

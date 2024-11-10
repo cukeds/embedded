@@ -1,0 +1,11 @@
+../Core/app/app.c:51:6:app_init	1
+../Core/app/app.c:58:6:app	9
+../Core/app/app.c:102:6:APP_MESSAGE_RECEIVED	1
+../Core/app/app.c:107:6:APP_SEND_MESSAGE	1
+../Core/app/app.c:113:6:APP_SET_MESSAGE_TO_SEND	1
+../Core/app/app.c:117:6:APP_SEND_COMMAND_TO_WORK_STATION	2
+../Core/app/app.c:127:6:APP_SETFLAG	6
+../Core/app/app.c:160:9:APP_GET_USER_BY_SERIAL_NUMBER	3
+../Core/app/app.c:170:9:APP_GET_USER_BY_WORKSTATION	3
+../Core/app/app.c:180:6:APP_UPDATE_WORKSTATION	3
+../Core/app/app.c:204:25:GET_APP_DATA	1

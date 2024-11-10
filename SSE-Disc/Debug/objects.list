@@ -12,6 +12,7 @@
 "./Core/Src/tim.o"
 "./Core/Startup/startup_stm32f407vgtx.o"
 "./Core/app/app.o"
+"./Core/app/bsp.o"
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o"
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o"
@@ -34,4 +35,3 @@
 "./ExtSrc/Util.o"
 "./ExtSrc/bsp_rf.o"
 "./ExtSrc/nrf24.o"
-"./ExtSrc/nrf24_hal.o"

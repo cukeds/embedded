@@ -1,5 +1,0 @@
-#include "app.h"
-
-void app(){
-	presence = BSP_HCSR04_GetPresence(20);
-}

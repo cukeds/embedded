@@ -1,7 +1,7 @@
 ExtSrc/nrf24.o: \
  C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/Common/Src/nrf24.c \
- ../../Common/Inc/nrf24.h ../../Common/Inc/nrf24_hal.h ../Core/Inc/spi.h \
- ../Core/Inc/main.h ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+ ../../Common/Inc/nrf24.h ../Core/Inc/spi.h ../Core/Inc/main.h \
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
@@ -32,13 +32,14 @@ ExtSrc/nrf24.o: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
- ../../Common/Inc/bsp_rf.h ../../Common/Inc/nrf24.h \
- ../../Common/Inc/Util.h ../Core/Inc/defines.h ../Core/Inc/bsp_hcsr04.h \
- ../Core/Inc/defines.h ../../Common/Inc/Util.h \
+ ../../Common/Inc/bsp_rf.h ../../Common/Inc/nrf24.h ../Core/Inc/defines.h \
+ ../../Common/Inc/Util.h ../Core/Inc/bsp_hcsr04.h ../Core/Inc/defines.h \
+ ../../Common/Inc/Util.h \
  C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app/app.h \
- C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app/app_defines.h
+ C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app/app_defines.h \
+ C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app/bsp.h \
+ ../Core/Inc/bsp_relay.h ../Core/Inc/gpio.h
 ../../Common/Inc/nrf24.h:
-../../Common/Inc/nrf24_hal.h:
 ../Core/Inc/spi.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
@@ -74,10 +75,13 @@ ExtSrc/nrf24.o: \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 ../../Common/Inc/bsp_rf.h:
 ../../Common/Inc/nrf24.h:
-../../Common/Inc/Util.h:
 ../Core/Inc/defines.h:
+../../Common/Inc/Util.h:
 ../Core/Inc/bsp_hcsr04.h:
 ../Core/Inc/defines.h:
 ../../Common/Inc/Util.h:
 C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app/app.h:
 C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app/app_defines.h:
+C:/Users/Juan/STM32CubeIDE/workspace_1.16.0/SSE-Disc/Core/app/bsp.h:
+../Core/Inc/bsp_relay.h:
+../Core/Inc/gpio.h:

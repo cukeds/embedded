@@ -1,0 +1,43 @@
+
+#pragma once
+#include "app_defines.h"
+#include "bsp_rf.h"
+#include "bsp_hcsr501.h"
+#include "bsp_rc522.h"
+#include "bsp_lcd.h"
+#include "bsp_encoder.h"
+#include <stdbool.h>
+
+typedef struct {
+	uint8_t serial_number;
+	char* name[30];
+};
+
+typedef struct {
+    PresenceSensor_Status presence;
+    uint8_t rx_data[NRF24L01P_PAYLOAD_LENGTH];
+    uint8_t tx_data[NRF24L01P_PAYLOAD_LENGTH];
+} APP_DATA_Struct;
+
+typedef struct {
+    bool message_received;
+    bool message_to_send;
+    bool waiting_for_user;
+} APP_FLAGS_Struct;
+
+typedef enum {
+    MESSAGE_RECEIVED = 0,
+    MESSAGE_TO_SEND,
+	WAITING_FOR_USER
+} APP_FLAGS_Enum;
+
+void app();
+void APP_MESSAGE_RECEIVED();
+
+void APP_SEND_MESSAGE();
+
+void APP_SET_MESSAGE_TO_SEND(uint8_t message[NRF24L01P_PAYLOAD_LENGTH]);
+
+void APP_SET_MESSAGE_RECEIVED(uint8_t message[NRF24L01P_PAYLOAD_LENGTH]);
+
+void APP_SETFLAG(APP_FLAGS_Enum flag);

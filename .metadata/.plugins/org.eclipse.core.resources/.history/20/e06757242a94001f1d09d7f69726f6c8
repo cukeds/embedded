@@ -1,5 +1,0 @@
-#define TRIG_PIN GPIO_PIN_8
-#define TRIG_PORT GPIOE
-
-#define ECHO_PIN GPIO_PIN_9
-#define ECHO_PORT GPIOE

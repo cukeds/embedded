@@ -30,9 +30,15 @@ Core/Src/stm32f1xx_it.o: ../Core/Src/stm32f1xx_it.c ../Core/Inc/main.h \
  ../Core/Inc/bsp_hcsr501.h ../Core/Inc/bsp_lcd.h \
  ../Core/Inc/../ECUAL/I2C_LCD/I2C_LCD.h \
  ../Drivers/CMSIS/Include/cmsis_gcc.h ../../Common/Inc/bsp_rf.h \
- ../../Common/Inc/nrf24.h ../../Common/Inc/nrf24_hal.h ../Core/Inc/spi.h \
- ../Core/Inc/defines.h ../../Common/Inc/Util.h ../Core/Inc/stm32f1xx_it.h \
- ../Core/Inc/bsp_encoder.h
+ ../../Common/Inc/nrf24.h ../Core/Inc/spi.h ../Core/Inc/defines.h \
+ ../../Common/Inc/Util.h \
+ C:/Users/Isaac/Documents/Downloads/workspace_1.16.0/workspace_1.16.0/SSE-BluePill/Core/app/app.h \
+ C:/Users/Isaac/Documents/Downloads/workspace_1.16.0/workspace_1.16.0/SSE-BluePill/Core/app/app_defines.h \
+ ../Core/Inc/bsp_hcsr501.h ../Core/Inc/bsp_rc522.h ../Core/Inc/bsp_lcd.h \
+ ../Core/Inc/bsp_encoder.h \
+ C:/Users/Isaac/Documents/Downloads/workspace_1.16.0/workspace_1.16.0/SSE-BluePill/Core/app/bsp.h \
+ ../Core/Inc/stm32f1xx_it.h \
+ C:/Users/Isaac/Documents/Downloads/workspace_1.16.0/workspace_1.16.0/SSE-BluePill/Core/app/bsp.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
@@ -72,9 +78,15 @@ Core/Src/stm32f1xx_it.o: ../Core/Src/stm32f1xx_it.c ../Core/Inc/main.h \
 ../Drivers/CMSIS/Include/cmsis_gcc.h:
 ../../Common/Inc/bsp_rf.h:
 ../../Common/Inc/nrf24.h:
-../../Common/Inc/nrf24_hal.h:
 ../Core/Inc/spi.h:
 ../Core/Inc/defines.h:
 ../../Common/Inc/Util.h:
-../Core/Inc/stm32f1xx_it.h:
+C:/Users/Isaac/Documents/Downloads/workspace_1.16.0/workspace_1.16.0/SSE-BluePill/Core/app/app.h:
+C:/Users/Isaac/Documents/Downloads/workspace_1.16.0/workspace_1.16.0/SSE-BluePill/Core/app/app_defines.h:
+../Core/Inc/bsp_hcsr501.h:
+../Core/Inc/bsp_rc522.h:
+../Core/Inc/bsp_lcd.h:
 ../Core/Inc/bsp_encoder.h:
+C:/Users/Isaac/Documents/Downloads/workspace_1.16.0/workspace_1.16.0/SSE-BluePill/Core/app/bsp.h:
+../Core/Inc/stm32f1xx_it.h:
+C:/Users/Isaac/Documents/Downloads/workspace_1.16.0/workspace_1.16.0/SSE-BluePill/Core/app/bsp.h:

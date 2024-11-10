@@ -1,1 +1,8 @@
-../Core/app/app.c:10:6:app	2
+../Core/app/app.c:11:6:app	3
+../Core/app/app.c:21:6:APP_MESSAGE_RECEIVED	1
+../Core/app/app.c:26:6:APP_SEND_MESSAGE	1
+../Core/app/app.c:32:6:APP_SET_MESSAGE_TO_SEND	1
+../Core/app/app.c:36:6:APP_SET_MESSAGE_RECEIVED	1
+../Core/app/app.c:40:6:APP_SETFLAG	3
+../Core/app/app.c:59:6:APP_PARSE_COMMAND	4
+../Core/app/app.c:78:18:GET_APP_DATA	1

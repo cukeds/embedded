@@ -1,0 +1,10 @@
+15:33:26 **** Incremental Build of configuration Debug for project TestRF ****
+make -j8 all 
+arm-none-eabi-size  TestRF.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9332	     20	   1668	  11020	   2b0c	TestRF.elf
+Finished building: default.size.stdout
+ 
+
+15:33:26 Build Finished. 0 errors, 0 warnings. (took 191ms)
+

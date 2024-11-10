@@ -3,4 +3,3 @@
 ../Core/Src/bsp_hcsr04.c:49:6:HAL_HCSR04_Trigger	16	static
 ../Core/Src/bsp_hcsr04.c:60:23:BSP_HCSR04_GetPresence	16	static
 ../Core/Src/bsp_hcsr04.c:70:6:HAL_TIM_IC_CaptureCallback	16	static
-../Core/Src/bsp_hcsr04.c:78:6:HAL_TIM_PeriodElapsedCallback	16	static

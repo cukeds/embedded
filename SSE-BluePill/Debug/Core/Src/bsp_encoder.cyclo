@@ -1,6 +1,6 @@
 ../Core/Src/bsp_encoder.c:10:6:HAL_TIM_IC_CaptureCallback	3
 ../Core/Src/bsp_encoder.c:25:6:BSP_ENCODER_Init	1
-../Core/Src/bsp_encoder.c:29:16:BSP_ENCODER_GetCount	1
+../Core/Src/bsp_encoder.c:29:16:BSP_ENCODER_GetCount	2
 ../Core/Src/bsp_encoder.c:32:16:BSP_ENCODER_GetSpeed	2
 ../Core/Src/bsp_encoder.c:40:16:BSP_ENCODER_GetDirection	1
 ../Core/Src/bsp_encoder.c:43:16:BSP_ENCODER_GetSwitch	1

@@ -41,6 +41,7 @@ SUBDIRS := \
 Core/ECUAL/I2C_LCD \
 Core/Src \
 Core/Startup \
+Core/app \
 Drivers/STM32F1xx_HAL_Driver/Src \
 ExtSrc \
 

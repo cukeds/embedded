@@ -5,13 +5,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Core/app/app.c 
+../Core/app/app.c \
+../Core/app/bsp.c 
 
 C_DEPS += \
-./Core/app/app.d 
+./Core/app/app.d \
+./Core/app/bsp.d 
 
 OBJS += \
-./Core/app/app.o 
+./Core/app/app.o \
+./Core/app/bsp.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -21,7 +24,7 @@ Core/app/%.o Core/app/%.su Core/app/%.cyclo: ../Core/app/%.c Core/app/subdir.mk
 clean: clean-Core-2f-app
 
 clean-Core-2f-app:
-	-$(RM) ./Core/app/app.cyclo ./Core/app/app.d ./Core/app/app.o ./Core/app/app.su
+	-$(RM) ./Core/app/app.cyclo ./Core/app/app.d ./Core/app/app.o ./Core/app/app.su ./Core/app/bsp.cyclo ./Core/app/bsp.d ./Core/app/bsp.o ./Core/app/bsp.su
 
 .PHONY: clean-Core-2f-app
 
